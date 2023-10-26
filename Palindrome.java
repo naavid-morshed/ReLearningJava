@@ -1,8 +1,8 @@
 public class Palindrome {
     public static void main(String[] args) {
-        int number = 51115;
+        int number = 21212;
         StringBuilder reversed = new StringBuilder("" + number);
-        String str = String.valueOf(reversed);
+        String str = reversed.toString();
         reversed.reverse();
 
         if (reversed.toString().equals(str)) {
