@@ -37,6 +37,6 @@ public class Tester {
             }
         }
 
-        int[] arr = IntStream.range(-2, 3).toArray(); // will populate from -2 to 2 [before 3]
+//        int[] arr = IntStream.range(-2, 3).toArray(); // will populate from -2 to 2 [before 3]
     }
 }
