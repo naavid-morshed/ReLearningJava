@@ -1,7 +1,9 @@
 package Fibonacci;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class Tester {
     public static void main(String[] args) {
@@ -34,5 +36,7 @@ public class Tester {
                 System.out.println();
             }
         }
+
+        int[] arr = IntStream.range(-2, 3).toArray(); // will populate from -2 to 2 [before 3]
     }
 }
