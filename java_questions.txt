@@ -49,5 +49,3 @@ Date(), Math():
         6. int randomNum = (int)(Math.random() * 101);  // 0 to 100
         7. int a = (int)Math.pow(3.0,2.0); [takes two doubles, will not take int at all
                                             needs to be converted]
-
-
