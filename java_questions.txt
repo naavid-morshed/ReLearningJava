@@ -1,0 +1,53 @@
+How a java file runs:
+    [note: java command only works on classes that hold main() method]
+    Java is both compiled and interpreted, first javac (java compiler) performs some lexical analysis and
+    compiles the .java file [which hold java code] at compile time into .class file [byte code]. Compilation end here,
+    then JVM (which fall under JRE/Java Runtime Environment) loads the byte code in classloader for bytecode verifier
+    to check validity of byte code fragment then, passes it onto the interpreter to finally execute intended operation.
+
+Why we need oop, what good does it do:
+    Object-Oriented Programming does two things, it provides structure and readability to code. It also provides ways for
+    a programmer to reuse class components to create many objects without rewriting same codes over and over again.
+    Features of OOP:
+        1. Constructor
+        2. Runtime memory allocation
+        3. Encapsulation [Restricting Direct variable access through access modifiers through private and make them
+           accessible through public/protected methods]
+        4. Inheritance [allow robust structure through Class extension]
+        5. Polymorphism [allows method overriding in inheritance and overloading at everywhere else]
+        6. Abstraction
+
+js vs java in terms of strings and it's operations:
+    Both fall under String class which is a complex/reference based data type and are accessed through variables
+    1. JS allows int to be compared with string via == or string to string via ===.
+       Java doesn't allow any of it even if both strings are completely equal because, java compares complex data type's
+       addressed. to check if two strings are equal, we need to use str1.equals(str2) which returns a boolean.
+    2. JS strings and Java strings are both immutable and cannot be changed.
+       For JAVA, When strings are to be changed, a new address is created in stack and value is assigned to it in heap memory.
+       Java Virtual Machine does it under the hood.
+       JavaScript does the same thing but with different methods via V8 engine or Server inside node.js or other means.
+
+Date(), Math():
+    Date():
+        1. empty constructor returns current date and time
+        2. (int month, int year, int date)
+        2. (int month, int year, int date, int hrs, int min, int sec)
+        3. Date date = new Date(2323223232L); (parameter takes a 64 bit int in milliseconds
+                                               since January 1, 1970, 00:00:00 GMT.)
+        4. Date(String s)
+            methods:
+                .setTime(parameter) [changed date with given param]
+                dateObj1.after/before(dateObj2) [returns boolean]
+
+    Math(): (package for performing various math operations)
+            (falls under java.lang hence does not need to be imported)
+        1. Math.max(5, 10); [only takes two param and cannot have incompatible types]
+        2. Math.min(5, 10);
+        3. Math.sqrt(64);
+        4. Math.abs(-4.7); [return absolute positive value]
+        5. Math.random(); [returns double]
+        6. int randomNum = (int)(Math.random() * 101);  // 0 to 100
+        7. int a = (int)Math.pow(3.0,2.0); [takes two doubles, will not take int at all
+                                            needs to be converted]
+
+
