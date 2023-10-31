@@ -9,7 +9,7 @@ class Bike {
     }
 }
 
-class Splendor extends Bike {
+final class Splendor extends Bike {
     Splendor() {
         System.out.println("inside splendor class");
     }
