@@ -1,0 +1,4 @@
+1. http://kjetilod.blogspot.com/2008/09/string-constructor-considered-useless.html
+    [String constructor is not useless? need to read more]
+2. https://www.javatpoint.com/java-string [read String methods from here]
+3. https://www.javatpoint.com/java-string-faqs [read more about strings from here]
