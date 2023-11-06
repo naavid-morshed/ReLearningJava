@@ -2,3 +2,55 @@
     [String constructor is not useless? need to read more]
 2. https://www.javatpoint.com/java-string [read String methods from here]
 3. https://www.javatpoint.com/java-string-faqs [read more about strings from here]
+4. https://www.javatpoint.com/exception-propagation [exception propagation]
+
+ReGex Notes: [do not add spaces willy-nilly. It will cause unexpected issues ]
+    [+ for one or more occurrences]
+    [* for zero or more occurrences]
+    [? for ]
+    [use {3,12} for range, min 3 max 12 chars]
+    1. pattern and matches have to have the same width
+        matcher("Tall") will match with a pattern "..l."
+        Pattern.matches(".s", "ass") will not match
+
+    2. [amn] will find either only "a" or only "m" or only "n". they can't coexist & other chars
+        are not allowed.
+        Pattern.matches("[amn]", "aa") false (a occurred twice)
+        Pattern.matches("[amn]", "a") true (among a or m or n)
+        Pattern.matches("[amn]", "ammonia") false (m and a comes more than once, also found o)
+
+    3. [amn]+ will allow multiples of 'a', 'm' & 'n' but other chars are not allowed
+        Pattern.matches("[amn]+", "ammmnaann") true
+        Pattern.matches("[amn]+", "ammmonaann") false ["o" found]
+
+    4. "\\d" [finds numbers but only once] [chars in match will throw false]
+       "\\d+" will allow multiple occurrence
+       Pattern.matches("\\D\\D\\d\\D+", "ad2fadfs") true
+       Pattern.matches("\\D\\D \\d\\D+", "ad 2fadfs") true
+       Pattern.matches("\\D\\D.\\d\\D+", "ad 2fadfs") true
+       [found two non digits in a row then a digit then non digits]
+
+    5. * for zero or more times of occurrence but other chars are not allowed
+        Pattern.matches("\\d*", "1123") true
+        Pattern.matches("\\d*", "ad") false
+
+    6. Pattern.matches("[a-zA-Z0-9]{6}", "66a6A6") true
+        [exactly six characters long, any combinations of digits, alphabets upper and lower]
+
+    7. Pattern.matches("[789]{1}[0-9]{9}", "9953038949") true
+        [{1} is redundant but more readable, "[789][0-9]{9}" does the same thing]
+        [exactly 10 char-long digit, the first digit will be either 7,8 or 9]
+
+    8.
+
+Exception Handling: (for handling runtime errors)
+    [when multiple exceptions occur only the first one will be caught, and its corresponding
+     catch block will execute]
+    [throw will terminate the program]
+    Types of exception:
+        1. 50/0 [Arithmetic exception]
+        2. String s = null;
+           sout(s.length()) [null pointer exception]
+        3. Integer.parseInt("abc") [number format exception]
+        4. arr[10] = "asd" [if index does not exist, ArrayIndexOutOfBounds]
+        5.
