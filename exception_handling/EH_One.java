@@ -1,7 +1,7 @@
 package exception_handling;
 
 public class EH_One {
-    public static void main(String[] args) throws Throwable {
+    public static void main(String[] args) {
         int a = 200;
 //        try {
 //            a = 50 / 0;
@@ -13,17 +13,18 @@ public class EH_One {
 //            System.out.println(a);
 //        }
         System.out.println(divider(10, 2));
-//        System.out.println(divider(10,0));
+        System.out.println(divider(10, 0));
         System.out.println(a);
     }
 
-    public static int divider(int a, int b) {
+    public static int divider(int a, int b) throws ArithmeticException {
         try {
             return a / b;
         } catch (ArithmeticException e) {
-            System.err.println(e.getMessage());
-//            return 0;
-            throw e;
+            System.err.println("Error found : " + e.getMessage());
+            return 0;
+        } finally {
+            System.out.println("Finally executed");
         }
     }
 }

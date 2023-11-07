@@ -30,11 +30,11 @@ final class MT15 extends Bike {
 
 class Test{
     public static void main(String[] args) {
-        Bike b = new Splendor(); //upcasting, preferred choice
+        Bike b = new MT15(); //upcasting, preferred choice
         b.run();
 
-        System.out.println();
-        Splendor s = new Splendor();
-        s.run();
+//        System.out.println();
+//        Splendor s = new Splendor();
+//        s.run();
     }
 }

@@ -4,7 +4,10 @@
 3. https://www.javatpoint.com/java-string-faqs [read more about strings from here]
 4. https://www.javatpoint.com/exception-propagation [exception propagation]
 
-ReGex Notes: [do not add spaces willy-nilly. It will cause unexpected issues ]
+[important: when Parent a = new Child(), a can only access overridden methods from Child or
+            original methods from Parent() ]
+
+ReGex Notes: [Do not add spaces willy-nilly. It will cause unexpected issues ]
     [+ for one or more occurrences]
     [* for zero or more occurrences]
     [? for ]
