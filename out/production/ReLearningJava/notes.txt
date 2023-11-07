@@ -5,9 +5,8 @@
 4. https://www.javatpoint.com/exception-propagation [exception propagation]
 
 [important: when Parent a = new Child(), a can only access overridden methods from Child or
-            original methods from Parent() ]
-
-ReGex Notes: [Do not add spaces willy-nilly. It will cause unexpected issues ]
+            original methods from Parent(), read at RunTimePoly/Upcasting.java]
+ReGex Notes: [Do not add spaces willy-nilly. It will cause unexpected issues]
     [+ for one or more occurrences]
     [* for zero or more occurrences]
     [? for ]
@@ -50,6 +49,10 @@ Exception Handling: (for handling runtime errors)
     [when multiple exceptions occur only the first one will be caught, and its corresponding
      catch block will execute]
     [throw will terminate the program]
+    [If the superclass method does not declare an exception, subclass overridden method cannot
+     declare the checked exception, but it can declare unchecked exception.]
+    [If the superclass method declares an exception, subclass overridden method can declare same,
+     subclass exception or no exception but cannot declare parent exception.]
     Types of exception:
         1. 50/0 [Arithmetic exception]
         2. String s = null;
