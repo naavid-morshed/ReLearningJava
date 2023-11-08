@@ -23,10 +23,6 @@ public class CopyRenameMove {
             System.out.print("Choose a new name for your file : ");
             File newFileName = new File("./FileStoreOne/" + stdIn.nextLine() + ".txt");
             Files.copy(file.toPath(), newFileName.toPath());
-//            String newFileName = "./FileStoreTwo/" + stdIn.nextLine() + ".txt";
-//
-//            boolean checker = file.renameTo(new File(newFileName));
-//            System.out.println(checker);
         } catch (IOException ioException) {
             System.err.println(ioException.getMessage());
         }
