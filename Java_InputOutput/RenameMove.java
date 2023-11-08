@@ -9,7 +9,7 @@ public class RenameMove {
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
         try {
-            System.out.print("Choose a name for your file : ");
+            System.out.print("Name of your file? ");
             String fileName = "./FileStoreOne/" + stdIn.nextLine() + ".txt";
             FileOutputStream fileInputStream = new FileOutputStream(fileName);
 
