@@ -44,6 +44,7 @@ ReGex Notes: [Do not add spaces willy-nilly. It will cause unexpected issues]
         [exactly 10 char-long digit, the first digit will be either 7,8 or 9]
 
     8.
+[get a file from a location(any type), change name and put it elsewhere]
 
 Exception Handling: (for handling runtime errors)
     [when multiple exceptions occur only the first one will be caught, and its corresponding
