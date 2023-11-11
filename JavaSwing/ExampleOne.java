@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 
 public class ExampleOne {
     public static void main(String[] args) {
-        // create a custom jframe
+        // create a custom JFrame
         CustomFrame customJFrame = new CustomFrame();
 
         // image icon
