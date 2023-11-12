@@ -17,8 +17,9 @@ class KeyCombinationApp extends JFrame {
         inputField = new JTextField(20);
         inputField.setEditable(false);
 
+        // does not work on Mac
         setIconImage(new ImageIcon("./JavaSwing/SwingProject/brac_it.png").getImage());
-        
+
         JPanel buttonPanel = new JPanel(new GridLayout(4, 3));
         for (int buttonName = 0; buttonName <= 9; buttonName++) {
             addButton(buttonPanel, String.valueOf(buttonName));
