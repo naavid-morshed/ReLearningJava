@@ -12,10 +12,13 @@ class KeyCombinationApp extends JFrame {
         setTitle("Key Combination Checker");
         setSize(300, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         enteredKeys = new StringBuilder();
         inputField = new JTextField(20);
         inputField.setEditable(false);
 
+        setIconImage(new ImageIcon("./JavaSwing/SwingProject/brac_it.png").getImage());
+        
         JPanel buttonPanel = new JPanel(new GridLayout(4, 3));
         for (int buttonName = 0; buttonName <= 9; buttonName++) {
             addButton(buttonPanel, String.valueOf(buttonName));
