@@ -35,10 +35,10 @@ class KeyCombinationApp extends JFrame {
         add(mainPanel);
     }
 
-    private void addButton(Container container, String text) {
+    private void addButton(JPanel buttonPanel, String text) {
         JButton button = new JButton(text);
         button.addActionListener(e -> handleButtonClick(text));
-        container.add(button);
+        buttonPanel.add(button);
     }
 
     private void handleButtonClick(String key) {
@@ -80,6 +80,6 @@ class KeyCombinationApp extends JFrame {
 
 public class SProject {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new KeyCombinationApp().setVisible(true));
+        new KeyCombinationApp().setVisible(true);
     }
 }
